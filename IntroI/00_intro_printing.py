@@ -14,11 +14,12 @@
 
 
 first_name = "Tom"
-# print("Hello CSPT13 and " + first_name)
+# print("Hello CSPT13 and", first_name)
 # num = 23.87
 
 # # f strings
-# my_string = "    this is a string tom    "
+# print(f"This is a name: ({first_name})")
+my_string = "    this is a string tom    "
 # print(my_string)
 
 # print(my_string.strip())
@@ -26,7 +27,7 @@ first_name = "Tom"
 # print(len(my_string.strip()))
 
 
-# print(f"Hello CSPT13 and           {len('this is a test')}     {first_name}.......".strip())
+print(f"        Hello CSPT13 and           {len('this is a test')}     {first_name}.......".strip())
 # print("something on a new line")
 
 # first_name

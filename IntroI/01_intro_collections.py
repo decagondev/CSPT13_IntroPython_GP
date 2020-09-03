@@ -5,7 +5,7 @@
 my_list = []
 my_list2 = list()
 
-print(my_list)
+# print(my_list)
 
 # create a list with numbers 1, 2, 3, 4, 5
 numbers = [1, 2, 3, 4, 5]
@@ -70,7 +70,7 @@ evens = [num for num in numbers if num % 2 == 0]
 # make sure they are capitalized (regardless of their original case)
 names = ["Sarah", "jorge", "sam", "frank", "bob", "sandy"]
 s_names = [name.capitalize() for name in names if name[0].lower() == 's']
-print(s_names)
+# print(s_names)
 
 
 
@@ -80,13 +80,25 @@ print(s_names)
 # Create a new dictionary
 
 # empty
-
+d = {}
 # key value pairs
+d2 = {
+    "gooooogle": "Tom",
+    (12, 23, 4): 41,
+    "age": "Bob"
+}
+
+s = set()
+
+["bob", "dave", "Jared", "bob"]
 
 # access an element via its key
+print(d2[(12, 23, 4)])  # O(1)
+
 
 
 
 # Lets think about Tuples?
 # this of an imutable list --> the tuple
 # good for constant values
+t = (1, 2, 3, 4)

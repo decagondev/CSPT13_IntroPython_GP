@@ -50,12 +50,12 @@ print(f3(8))     # Should print 9
 # Google "python keyword arguments".
 
 def f4(**kwargs):
-  for k, v in kwargs.items():
-    print(f'key: {k}, value: {v}')
+  # for k, v in kwargs.items():
+  #   print(f'key: {k}, value: {v}')
 
   # Alternate:
-  # for k in kwargs:
-  #   print(f'key: {k}, value: {kwargs[k]}')
+  for k in kwargs:
+    print(f'key: {k}, value: {kwargs[k]}')
 
 # Should print
 # key: a, value: 12
@@ -67,6 +67,7 @@ f4(a=12, b=30)
 # key: population, value: 121240
 # key: founded, value: "March 23, 1868"
 f4(city="Berkeley", population=121240, founded="March 23, 1868")
+# [("city", "berkley"), ("population", 121240), ("founded", "March 23, 1868")]
 
 d = {
     "monster": "goblin",

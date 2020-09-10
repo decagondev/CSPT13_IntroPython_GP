@@ -7,4 +7,4 @@ class Clothing(Product):
         self.size = size
 
     def __str__(self):
-        return f"{super().__str__()} comes in {self.color}, {self.size}"
+        return f"{super().__str__()} comes in {self.color}, {self.size}cm"

@@ -1,11 +1,18 @@
 # a basic mock adventure to demonstrat the idea of class interactions
 from room import Room
 from player import Player
+from items.weapon import Weapon
 
-outside = Room("Outside", "This room is outside you see some castle entrance to the north")
-castle = Room("Castle", "You have entered the castle and see a starway to the east and a large door to the north")
-treasure_room = Room("TreasureRoom", "you have found the treasure room here you have only an exit to the south")
-landing = Room("Landing", "This is a broken old landing in the castle and only has exits west down the stairs")
+#items?
+
+sword = Weapon("StickySword", "Some sticky sword made of wood", 10)
+
+
+
+outside = Room("Outside", "This room is outside you see some castle entrance to the north", [])
+castle = Room("Castle", "You have entered the castle and see a starway to the east and a large door to the north", [])
+treasure_room = Room("TreasureRoom", "you have found the treasure room here you have only an exit to the south", [sword])
+landing = Room("Landing", "This is a broken old landing in the castle and only has exits west down the stairs", [])
 
 outside.n_to = castle
 castle.s_to = outside
@@ -17,7 +24,7 @@ landing.w_to = castle
 playing = True
 
 
-player = Player("Dave the Adventurer", outside)
+player = Player("Dave the Adventurer", outside, [])
 
 while playing:
     # Print out some room data

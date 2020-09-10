@@ -1,9 +1,10 @@
 # lets make a room class
 
 class Room:
-    def __init__(self, name, description):
+    def __init__(self, name, description, storage):
         self.name = name
         self.description = description
+        self.storage = storage
 
     def __str__(self):
         output = "\n"

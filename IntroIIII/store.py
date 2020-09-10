@@ -2,8 +2,8 @@
 class Store:
     def __init__(self, name, categories):
         # attributes
-        self.name = name
-        self.categories = categories
+        self.name = name # string has_a name
+        self.categories = categories # has_a (has_many) composition
 
     def __str__(self):
         ret = f"{self.name}\n"
